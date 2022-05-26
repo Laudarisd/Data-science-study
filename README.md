@@ -15,7 +15,7 @@ This is a complete course to understand data science and understand requirements
 
 
 ## Statistics & Mathematics
-
+https://peterroelants.github.io/posts/gaussian-process-tutorial/
 
 **Few stat concepts**
 - Mean, median, sd, variance, co-variance
