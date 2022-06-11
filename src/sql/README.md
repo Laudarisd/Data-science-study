@@ -95,4 +95,20 @@ In attribute insert criteria, if it is given `NO NULL` then there shouldn't be e
 If we write `DEFAULT 'Undecided' instead of UNIQUE then this will insert `undecided` if the entries are empty
 
 
+### Auto increment
 
+```
+CREATE TABLE student (
+    student_id int NOT NULL AUTO_INCREMENT,
+    LastName varchar(20) NOT NULL,
+    FirstName varchar(20),
+    major CARCHAR(20) NOT NULL,
+    gps DECIMALS(3, 2)
+    PRIMARY KEY (student_id)
+);
+```
+
+By default, the starting value for AUTO_INCREMENT is 1, and it will increment by 1 for each new record
+
+
+[refrence](https://www.w3schools.com/sql/sql_dates.asp)
