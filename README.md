@@ -29,11 +29,11 @@ Basically, database management is a `C.R.U.D`.
 
 ***RDBMS***
 
-Relational Database Mangement System --- MySQL, Oracle, PostgreSQL, MariaDB and etc.
+Relational Database Mangement System --- `MySQL, Oracle, PostgreSQL, MariaDB and etc`.
 
-*** Non RDBMS***
+***Non RDBMS***
 
-Non Relational database Management Systme --- NoSQL, i.e. MongoDB, dynamoDB, Apache, Cassandra
+Non Relational database Management Systme --- NoSQL, i.e. `MongoDB, dynamoDB, Apache Cassandra
 
 -------------------------------------------------------
 
@@ -47,11 +47,24 @@ In SQL, we need to understnad about keys before understnading data system.
 
 Here are few keys:
 
+- Primary Key
+- Natural Key
+- Foreign Key
+- Super id
+- Composite Key
+
+SQl is actually a hybrid language. It has four types of language in one.
+
+1. Data Querry Language(DQL)
+2. Data Definition Language(DDL)
+3. Data Central Language(DCL)
+4. Data Manipulation Language(DML)
 
 
+### So what is Querry?
+A querry is a set of instruction given to the RDBMS(written in SQL) that tells the RDBMS what information you want it to retrive for you.
 
-
-
+For setup, installation and practice click [here](https://github.com/Laudarisd/Data-science-study/tree/master/src/sql)
 
 
 **NoSQL**
