@@ -66,8 +66,9 @@ SQl is actually a hybrid language. It has four types of language in one.
 
 ### So what is Querry?
 A querry is a set of instruction given to the RDBMS(written in SQL) that tells the RDBMS what information you want it to retrive for you.
+----------------------------------------------------------------------------------
 
-For setup, installation and practice click [here](https://github.com/Laudarisd/Data-science-study/tree/master/src/sql)
+For SQL setup, installation and practice click [here](https://github.com/Laudarisd/Data-science-study/tree/master/src/sql)
 
 
 **NoSQL**
