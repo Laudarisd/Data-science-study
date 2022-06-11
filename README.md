@@ -1,17 +1,31 @@
 # Data Science
 
-This is a complete course to understand data science and understand requirements.
+This is a complete course to understand data science and requirements.
 
 ## Complete  Roadmap To understand Data Science
 
 **Diagram**
 
-
 ## Server Handling
+Data science is an emerging fiels with numerous opportunities. Every data scientist require a skill of handling
+data from server. Here, I would like to talk about SQL and NoSQL.
+
+Before moving to SQL and NoSQL, I would like to give short introduction of `DBMS`.
+
+***DBMS***
+
+Database Management System is a special software program that helps users to create and maintain database.
+
 
 **SQL**
 
-**NO-SQL**
+Structured Querry Language(SQL) is a sequal database. it is a `Relational Database`. In SQL, each table has columns and rows.
+
+
+
+
+
+**NoSQL**
 
 
 ## Statistics & Mathematics
