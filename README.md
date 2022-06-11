@@ -47,11 +47,14 @@ In SQL, we need to understnad about keys before understnading data system.
 
 Here are few keys:
 
+- Candidate Key
 - Primary Key
-- Natural Key
 - Foreign Key
-- Super id
+- Super Key
+- Alternate Key
 - Composite Key
+- Unique Key
+
 
 SQl is actually a hybrid language. It has four types of language in one.
 
