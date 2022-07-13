@@ -1,11 +1,55 @@
 # SQL commands
 
 ## SETUP and Installation
+1. MAc M1
+
+Lots of application are still not compatiable in M1 chips device. 
+So lets give a try to set up `Microsoft Azure SQL edge`.
+
+- Download Azure Data Studio from (here)[https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15#macos-installation]
+
+- Set up docker. To install docker click (here)[https://docs.docker.com/desktop/mac/apple-silicon/]
+
+- Let's pull azure sql edge. In Mac terminal run following command:
+```
+docker pull mcr.microsoft.com/azure-sql-edge
+```
+Again run follwoing comand to setup pw and port
+
+```
+docker run --cap-add SYS_PTRACE -e ‘ACCEPT_EULA=1’ -e ‘MSSQL_SA_PASSWORD=reallyStrongPwd123@’ -p 1433:1433 --name SQLServer -d mcr.microsoft.com/azure-sql-edge
+```
+
+Once the command is run successfully, go back to your mac docker app where we can see `azure...` container.
+
+Now launch Azure Data Studio and click New Connection for setting up the SQL Connection.
+
+- go to new connection
+- then on screen :
+     > connection name : Microsoft SQL Server
+     > server localhost
+     > Athentication type : SQL Login
+     > User name: sa
+     > password: reallyStrongPwd123@
+     
+- hit connect 
+
+>=== Voila >====
+
+we can see SQL server running on.....
 
 
 
-Note: all the command are exucated in `popsql`. It can also be done in terminal.
 
+2. . Note: all the command are exucated in `popsql`. It can also be done in terminal.
+
+To connect to popsql:
+
+```
+hostname: ....
+port:...
+database: Table name
+```
 
 ### Create Table
 
