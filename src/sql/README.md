@@ -38,7 +38,7 @@ Now launch Azure Data Studio and click New Connection for setting up the SQL Con
 
 we can see SQL server running on.....
 
-
+=============================================================
 
 
 2. My SQL
@@ -62,6 +62,20 @@ To uninstall MySQL
 brew uninstall mysql
 ```
 
+*** How to reset root password in mysql m1 mac
+```
+Make sure you have Stopped MySQL first (above).
+Run the server in safe mode with privilege bypass: sudo mysqld_safe --skip-grant-tables
+mysql -u root
+UPDATE mysql.user SET authentication_string=null WHERE User='root';
+FLUSH PRIVILEGES;
+exit;
+Then
+mysql -u root
+ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'yourpasswd';
+```
+--------------------------------------
+
 Note: all the command are exucated in `popsql`. It can also be done in terminal.
 
 To connect to popsql:
@@ -71,7 +85,7 @@ hostname: ....
 port:...
 database: Table name
 ```
-
+=========================================================
 ### Create Table
 
 ```
