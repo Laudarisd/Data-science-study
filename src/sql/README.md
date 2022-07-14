@@ -1,7 +1,7 @@
 # SQL commands
 
 ## SETUP and Installation
-1. MAc M1
+1. Mac M1 -- Microsoft Azure SQL
 
 Lots of application are still not compatiable in M1 chips device. 
 So lets give a try to set up `Microsoft Azure SQL edge`.
@@ -41,7 +41,28 @@ we can see SQL server running on.....
 
 
 
-2. . Note: all the command are exucated in `popsql`. It can also be done in terminal.
+2. My SQL
+
+To install in mac m1: 
+```
+brew install mysql
+```
+
+Start and stop MySQL
+
+```
+Start MySQL – sudo mysql.server start
+Stop MySQL – sudo mysql.server stop
+Restart MySQL – sudo mysql.server restart
+Check status – sudo mysql.server status
+```
+
+To uninstall MySQL
+```
+brew uninstall mysql
+```
+
+Note: all the command are exucated in `popsql`. It can also be done in terminal.
 
 To connect to popsql:
 
@@ -153,6 +174,10 @@ CREATE TABLE student (
 ```
 
 By default, the starting value for AUTO_INCREMENT is 1, and it will increment by 1 for each new record
+
+--------------------------------------------------------------------------------------
+
+
 
 
 [refrence](https://www.w3schools.com/sql/sql_dates.asp)
