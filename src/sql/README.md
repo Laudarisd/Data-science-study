@@ -6,9 +6,9 @@
 Lots of application are still not compatiable in M1 chips device. 
 So lets give a try to set up `Microsoft Azure SQL edge`.
 
-- Download Azure Data Studio from (here)[https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15#macos-installation]
+- Download Azure Data Studio from [here](https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15#macos-installation)
 
-- Set up docker. To install docker click (here)[https://docs.docker.com/desktop/mac/apple-silicon/]
+- Set up docker. To install docker click [here](https://docs.docker.com/desktop/mac/apple-silicon/)
 
 - Let's pull azure sql edge. In Mac terminal run following command:
 ```
@@ -77,11 +77,11 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'yourpass
 
 Alternative way:
 
-click (here)[https://dev.mysql.com/downloads/file/?id=511481] to download MySQl
+click [here](https://dev.mysql.com/downloads/file/?id=511481) to download MySQl
 
 To start server
 
-(reference)[https://www.positronx.io/how-to-install-mysql-on-mac-configure-mysql-in-terminal/]
+[reference](https://www.positronx.io/how-to-install-mysql-on-mac-configure-mysql-in-terminal/)
 
 
 
