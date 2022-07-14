@@ -74,6 +74,24 @@ Then
 mysql -u root
 ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'yourpasswd';
 ```
+
+Alternative way:
+
+click (here)[https://dev.mysql.com/downloads/file/?id=511481] to download MySQl
+
+To start server
+
+(reference)[https://www.positronx.io/how-to-install-mysql-on-mac-configure-mysql-in-terminal/]
+
+
+
+
+```
+mysql.server start
+```
+
+
+
 --------------------------------------
 
 Note: all the command are exucated in `popsql`. It can also be done in terminal.
