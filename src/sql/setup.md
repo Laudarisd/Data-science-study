@@ -86,7 +86,6 @@ To start server
 ```
 mysql.server start
 ```
-x
 =================================================
 3. Install in Ubuntu
 
