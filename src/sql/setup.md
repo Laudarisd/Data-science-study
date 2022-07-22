@@ -163,4 +163,18 @@ $ sudo mysql_secure_installation
 ```
 
 
+2. Starting MySQL
+.. ERROR! The server quit without updating PID file (/usr/local/mysql/data/AXH4TF401WF.pid).
+
+Solution: ..
+
+
+
+3. ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
+
+Solution:
+
+
+
+
 
