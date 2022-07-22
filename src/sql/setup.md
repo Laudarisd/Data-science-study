@@ -135,6 +135,13 @@ Again try to login into MySQL with the  password
 ```
 mysql -u root -p
 ```
+=======================================
+***Allow remote access***
+
+```
+sudo ufw enable
+sudo ufw allow mysql
+```
 
 ==========================================
 
