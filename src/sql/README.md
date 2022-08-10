@@ -128,7 +128,10 @@ This will delete entire dataset
 ALTER TABLE student DROP COLUMN gpa;
 ```
 This will drop `gpa` column from our table.
+
+
 =====================================================================
+
 ### Insert data 
 ```
 INSERT INTO student VALUES (1, 'JACK', 'Biology')
