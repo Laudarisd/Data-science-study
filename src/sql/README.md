@@ -44,6 +44,7 @@ DESCRIBE student
 ```
 
 This will show created data
+
 =====================================================================
 
 ### RENAME TABLE
@@ -308,5 +309,6 @@ In this example:
 
 #### References
 
-[ref1](https://www.mysqltutorial.org/mysql-update-data.aspx)
-[ref2](https://www.w3schools.com/sql/sql_dates.asp)
+<p>[ref1](https://www.mysqltutorial.org/mysql-update-data.aspx)</p>
+
+<p>[ref2](https://www.w3schools.com/sql/sql_dates.asp)</p>
