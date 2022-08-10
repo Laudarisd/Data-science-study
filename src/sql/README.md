@@ -22,7 +22,11 @@ will create a table name student.
 For more information while creating table, we can write in this way:
 
 ```
-CREATE TABLE student(student_id INT PRIMARY KEY, name VARCHAR(20), major VARCHAR(20));
+CREATE TABLE student(
+    student_id INT PRIMARY KEY,
+    name VARCHAR(20),
+    major VARCHAR(20)
+);
 ```
 In another way, we can setup PRIMARY KEY in this way
 
@@ -38,6 +42,14 @@ DESCRIBE student
 ```
 
 This will show created data
+=====================================================================
+
+### Rename Table 
+
+```
+ALTER TABLE student
+RENAME TO new_table_name;
+```
 
 =====================================================================
 
@@ -46,7 +58,59 @@ This will show created data
 ```
 ALTER TABLE studen ADD gpa DECIMAL(3,2);
 ```
-This will add a new column 'gpa' with decimal criteria  in our table `student`
+
+***Add multiple columns***
+```
+ALTER TABLE table_name
+    ADD new_column_name column_definition
+    [FIRST | AFTER column_name],
+    ADD new_column_name column_definition
+    [FIRST | AFTER column_name],
+    ...;
+Code language: SQL (Structured Query Language) (sql)
+```
+
+More examples:
+```
+ALTER TABLE vehicles
+ADD color VARCHAR(50),
+ADD note VARCHAR(255);
+```
+=====================================================================
+### Modify a column
+```
+ALTER TABLE table_name
+MODIFY column_name column_definition
+[ FIRST | AFTER column_name];    
+```
+
+If we want to change column name a NOT NULL then we can do the following:
+```
+ALTER TABLE student 
+MODIFY name VARCHAR(20) NOT NULL;
+```
+
+
+***Modify multiple columns***
+```
+ALTER TABLE table_name
+    MODIFY column_name column_definition
+    [ FIRST | AFTER column_name],
+    MODIFY column_name column_definition
+    [ FIRST | AFTER column_name],
+    ...;
+```
+
+e.g. we have a table name `vehicles`. We want to modify column `year` and `color` then we can do the following:
+```
+ALTER TABLE vehicles 
+MODIFY year SMALLINT NOT NULL,
+MODIFY color VARCHAR(20) NULL AFTER make;
+```
+In this example:
+
+First, modify the data type of the year column from INT to SMALLINT
+Second, modify the color column by setting the maximum length to 20, removing the NOT NULL constraint, and changing its position to appear after the make column.
 
 =====================================================================
 ### Delete entire data
