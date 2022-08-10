@@ -122,7 +122,7 @@ DELETE TABLE student;
 This will delete entire dataset
 
 
-### Delete specific column
+***Delete specific column***
 
 ```
 ALTER TABLE student DROP COLUMN gpa;
@@ -181,7 +181,58 @@ By default, the starting value for AUTO_INCREMENT is 1, and it will increment by
 
 =====================================================================
 
+### Update
+To update date table 'student'
 
+```
+SELECT * FROM student;
+UPDATE student
+SET 
+major = 'Computer'
+WHERE student_id = 4;
+```
+
+***Update more than one values ***
+If we have table `employes`
+
+```
+SELECT * FROM employes
+UPDATE employes
+SET
+lastname = 'Hill',
+    email = 'mary.hill@classicmodelcars.com'
+WHERE
+    employeeNumber = 1056;
+```
+```
+UPDATE employees
+SET email = REPLACE(email,'@classicmodelcars.com','@mysqltutorial.org')
+WHERE
+   jobTitle = 'Sales Rep' AND
+   officeCode = 6;
+```
+
+
+***Update with more condition***
+```
+SELECT * FROM student;
+UPDATE student
+SET 
+major = 'Computer'
+WHERE major = 'Bio' or major = 'Chem' ;
+```
+
+=====================================================================
+### Delete row
+```
+SELECT * FROM student
+DELETE FROM student
+WHERE student_id = 5;
+```
+We can also use `and` condition
+```
+WHERE name = 'TOM' AND major = 'Undecided';
+```
 
 
 
