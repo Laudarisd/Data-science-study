@@ -424,6 +424,42 @@ WHERE
 
 ***SUM***
 
+The following shows the order line items of the order number 10110:
+```
+SELECT 
+    orderNumber, 
+    quantityOrdered, 
+    priceEach
+FROM
+    orderdetails
+WHERE
+    orderNumber = 10100;
+```
+To calculate the total for the order number 10110, you use the SUM() function as follows:
+
+```
+SELECT 
+	SUM(quantityOrdered * priceEach)  orderTotal
+FROM
+	orderdetails
+WHERE
+	orderNumber = 10100;
+
+```
+
+*** SUM with GROUP BY***
+
+```
+SELECT 
+    orderNumber, 
+    SUM(quantityOrdered * priceEach) orderTotal
+FROM
+    orderdetails
+GROUP BY 
+    orderNumber
+ORDER BY 
+    orderTotal DESC;
+```
 
 =====================================================================
 
