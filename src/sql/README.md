@@ -306,6 +306,11 @@ In this example:
 
 
 =====================================================================
+<li> <a href = "https://github.com/Laudarisd/Data-science-study/tree/master/src/sql/function.md"> Function in Query </a> </li>
+
+
+
+
 
 #### References
 <li> <a href = "https://www.mysqltutorial.org/mysql-update-data.aspx"> ref 1 </a> </li>
