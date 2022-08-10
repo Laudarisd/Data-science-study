@@ -11,7 +11,8 @@ port:...
 database: Table name
 ```
 =====================================================================
-### Create Table
+
+### CREATE TABLE
 
 ```
 CREATE TABLE student;
@@ -35,7 +36,8 @@ CREATE TABLE student PRIMARY KEY student_id;
 ```
 
 =====================================================================
-### Check created data
+
+### CHECK CREATED TABLE
 
 ```
 DESCRIBE student
@@ -44,7 +46,7 @@ DESCRIBE student
 This will show created data
 =====================================================================
 
-### Rename Table 
+### RENAME TABLE
 
 ```
 ALTER TABLE student
@@ -53,7 +55,7 @@ RENAME TO new_table_name;
 
 =====================================================================
 
-### Add extra column in created data
+### ADD EXTRA COLUMN IN CREATED DATA
 
 ```
 ALTER TABLE studen ADD gpa DECIMAL(3,2);
@@ -77,7 +79,9 @@ ADD color VARCHAR(50),
 ADD note VARCHAR(255);
 ```
 =====================================================================
-### Modify a column
+
+### MODIFY COLUMN
+
 ```
 ALTER TABLE table_name
 MODIFY column_name column_definition
@@ -113,7 +117,8 @@ First, modify the data type of the year column from INT to SMALLINT
 Second, modify the color column by setting the maximum length to 20, removing the NOT NULL constraint, and changing its position to appear after the make column.
 
 =====================================================================
-### Delete entire data
+
+### DELETE ENTIRE DATA
 
 ```
 DELETE TABLE student;
@@ -132,7 +137,8 @@ This will drop `gpa` column from our table.
 
 =====================================================================
 
-### Insert data 
+### INSERT DATA 
+
 ```
 INSERT INTO student VALUES (1, 'JACK', 'Biology')
 ```
@@ -167,7 +173,8 @@ In attribute insert criteria, if it is given `NO NULL` then there shouldn't be e
 If we write `DEFAULT 'Undecided' instead of UNIQUE then this will insert `undecided` if the entries are empty
 
 =====================================================================
-### Auto increment
+
+### AUTO INCREMENT
 
 ```
 CREATE TABLE student (
@@ -184,7 +191,8 @@ By default, the starting value for AUTO_INCREMENT is 1, and it will increment by
 
 =====================================================================
 
-### Update
+### UPDATE
+
 To update date table 'student'
 
 ```
@@ -226,7 +234,9 @@ WHERE major = 'Bio' or major = 'Chem' ;
 ```
 
 =====================================================================
-### Delete row
+
+### DELETE ROW
+
 ```
 SELECT * FROM student
 DELETE FROM student
@@ -237,6 +247,66 @@ We can also use `and` condition
 WHERE name = 'TOM' AND major = 'Undecided';
 ```
 
+=====================================================================
+
+### ORDER BY
+
+The ORDER BY keyword is used to sort the result-set in ascending or descending order.
+
+```
+SELECT * FROM table_name
+ORDER BY  colume1, column2,.... ASC|DESC;
+```
+
+e.g. 
+```
+SELECT name FROM student
+
+-- or we can do following
+
+SELECT student.name, student.major
+FROM student
+ORDER BY student_id ASC|DESC;
+```
+
+e.g. 2
+
+```
+SELECT * FROM Customers
+ORDER BY Country DESC;
+```
+=====================================================================
+
+### LIMIT
+
+```
+SELECT 
+    select_list
+FROM
+    table_name
+LIMIT [offset,] row_count;
+```
+
+e.g.1
+```
+SELECT 
+    customerNumber, 
+    customerName, 
+    creditLimit
+FROM
+    customers
+ORDER BY creditLimit DESC
+LIMIT 5;
+```
+In this example:
+
+- First, the ORDER BY clause sorts the customers by credits in high to low.
+- Then, the LIMIT clause returns the first 5 rows
 
 
-[refrence](https://www.w3schools.com/sql/sql_dates.asp)
+=====================================================================
+
+#### References
+
+[ref1](https://www.mysqltutorial.org/mysql-update-data.aspx)
+[ref2](https://www.w3schools.com/sql/sql_dates.asp)
