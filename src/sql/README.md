@@ -306,8 +306,130 @@ In this example:
 
 
 =====================================================================
+
+### COUNT , AVERAGE , MAX , MIN , SUM
+
+***COUNT***
+```
+SELECT COUNT(column_name) 
+FROM table_name;
+
+```
+
+e.g.1
+```
+SELECT COUNT(emp_id)
+FROM employees;
+WHERE sex = 'F' AND birth-date > 1970-01-01;
+```
+
+e.g.2 
+We can also use `count` with `GROUP BY`
+
+```
+SELECT product, COUNT(*)
+FROM products
+GROUP BY productline;
+```
+
+***AVE***
+
+Let's find out average salary of male from employees table
+
+e.g.1
+
+```
+SELECT AVG(salary)
+FROM employees;
+WHERE sex = 'M';
+```
+e.g.2
+
+```
+SELECT 
+    AVG(buyprice) 'Average Classic Cars Price'
+FROM
+    products
+WHERE
+    productline = 'Classic Cars';
+```
+
+***MAX***
+```
+SELECT 
+    MAX(amount) largest_payment_2004
+FROM
+    payments
+WHERE
+    YEAR(paymentDate) = 2004;
+```
+In this example:
+
+First, use a condition in the WHERE clause to get only payments whose year is 2004. We used the YEAR() function to extract year from the payment date.
+Then, use the MAX() function in the SELECT clause to find the largest amount of payments in 2004.
+
+e.g. 1
+
+```
+SELECT 
+    *
+FROM
+    payments
+WHERE
+    amount = (SELECT 
+            MAX(amount)
+        FROM
+            payments);
+```
+
+e.g.2 
+
+```
+SELECT * FROM payments
+WHERE amount = (SELECT MAX(amount) 
+                FROM payments);
+```
+
+***MIN***
+
+e.g. 1
+
+```
+SELECT 
+    MIN(buyPrice)
+FROM
+    products
+WHERE
+    productline = 'Motorcycles';
+```
+
+e.g. 2
+
+
+```
+SELECT 
+    productCode, 
+    productName, 
+    buyPrice
+FROM
+    products
+WHERE
+    buyPrice = (
+        SELECT 
+            MIN(buyPrice)
+        FROM
+            products);
+```
+
+
+***SUM***
+
+
+=====================================================================
+
 <li> <a href = "https://github.com/Laudarisd/Data-science-study/tree/master/src/sql/function.md"> Function in Query </a> </li>
 
+=====================================================================
 
 
 
