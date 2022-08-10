@@ -308,7 +308,5 @@ In this example:
 =====================================================================
 
 #### References
-
-<p>[ref1](https://www.mysqltutorial.org/mysql-update-data.aspx)</p>
-
-<p>[ref2](https://www.w3schools.com/sql/sql_dates.asp)</p>
+<li> <a href = "https://www.mysqltutorial.org/mysql-update-data.aspx"> ref 1 </a> </li>
+<li> <a href = "https://www.w3schools.com/sql/sql_dates.asp"> ref 2 </a> </li>
