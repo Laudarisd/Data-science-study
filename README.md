@@ -114,7 +114,7 @@ https://peterroelants.github.io/posts/gaussian-process-tutorial/
 
 ### Supervisor and Unsupervisor
 ### Classification and Regeression
-### Algorithms
+### [Algorithms](https://github.com/Laudarisd/Data-science-study/tree/master/src/ml)
 ### Train Model
 
 
