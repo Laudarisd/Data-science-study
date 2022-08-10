@@ -463,6 +463,51 @@ ORDER BY
 
 =====================================================================
 
+### CASE
+
+The following SQL goes through conditions and returns a value when the first condition is met:
+
+e.g. 1
+
+
+```
+SELECT OrderID, Quantity,
+CASE
+    WHEN Quantity > 30 THEN 'The quantity is greater than 30'
+    WHEN Quantity = 30 THEN 'The quantity is 30'
+    ELSE 'The quantity is under 30'
+END AS QuantityText
+FROM OrderDetails;
+```
+e.g. 2
+
+
+
+```
+SELECT CustomerName, City, Country
+FROM Customers
+ORDER BY
+(CASE
+    WHEN City IS NULL THEN Country
+    ELSE City
+END);
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+=====================================================================
+
+
 <li> <a href = "https://github.com/Laudarisd/Data-science-study/tree/master/src/sql/function.md"> Function in Query </a> </li>
 
 =====================================================================
