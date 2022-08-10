@@ -78,6 +78,16 @@ Alternative way:
 
 click [here](https://dev.mysql.com/downloads/file/?id=511481) to download MySQl
 
+After installation, add path to `.bash_profile'  file
+```
+export PATH=/usr/local/mysql/bin:$PATH
+```
+
+Update the file
+```
+$ source ~/.bash_profile
+```
+
 To start server
 
 [reference](https://www.positronx.io/how-to-install-mysql-on-mac-configure-mysql-in-terminal/)
@@ -86,6 +96,10 @@ To start server
 ```
 mysql.server start
 ```
+
+
+
+
 =================================================
 3. Install in Ubuntu
 
