@@ -332,6 +332,17 @@ FROM products
 GROUP BY productline;
 ```
 
+e.g.3 
+
+To find how many males and females are there are
+
+```
+SELECT COUNT(sex), sex
+FROM employee
+GROUP BY sex;
+``` 
+
+
 ***AVE***
 
 Let's find out average salary of male from employees table
