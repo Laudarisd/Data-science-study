@@ -9,3 +9,11 @@ SELECT * FROM table1
 UNION
 SELECT * FROM table2;
 ```
+
+e,g,1
+
+```sql
+SELECT first_name FROM employees
+UNION
+SELECT barach FROM branches;
+```
