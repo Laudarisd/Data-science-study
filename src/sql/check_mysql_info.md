@@ -2,27 +2,27 @@
 
 ***Run MySQL in terminal***
 
-```
+```sql
 $ mysql -u root -p
 ```
 We can see mysql running in terminal ....
-```
+```sql
 mysql> 
 ```
 ***MySQL info***
 run
-```
+```sql
 mysql> status
 ```
 
 or 
-```
+```sql
 mysql> \s
 ```
 
 ***Check host***
 
-```
+```sql
 mysql> SHOW VARIABLES WHERE Variable_name = 'hostname';
 
 #output should be 
@@ -40,7 +40,7 @@ mysql >
 
 ***Check port***
 
-```
+```sql
 mysql> SHOW VARIABLES WHERE port = 'port';
 
 #output should be 
@@ -57,7 +57,7 @@ mysql >
 ```
 
 ***Check connection id***
-```
+```sql
 SELECT host FROM information_schema.processlist WHERE ID=connection_id();
 ```
 
@@ -65,7 +65,7 @@ SELECT host FROM information_schema.processlist WHERE ID=connection_id();
 
 ***Other ways***
 
-```
+```sql
 SELECT SUBSTRING_INDEX(USER(), '@', -1) AS ip,  @@hostname as hostname, @@port as port, DATABASE() as current_database;
 
 SELECT * FROM information_schema.GLOBAL_VARIABLES where VARIABLE_NAME like 'hostname';

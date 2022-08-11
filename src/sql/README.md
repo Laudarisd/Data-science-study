@@ -14,7 +14,7 @@ database: Table name
 
 ### CREATE TABLE
 
-```
+```sql
 CREATE TABLE student;
 ```
 will create a table name student.
@@ -22,7 +22,7 @@ will create a table name student.
 
 For more information while creating table, we can write in this way:
 
-```
+```sql
 CREATE TABLE student(
     student_id INT PRIMARY KEY,
     name VARCHAR(20),
@@ -31,7 +31,7 @@ CREATE TABLE student(
 ```
 In another way, we can setup PRIMARY KEY in this way
 
-```
+```sql
 CREATE TABLE student PRIMARY KEY student_id;
 ```
 
@@ -39,7 +39,7 @@ CREATE TABLE student PRIMARY KEY student_id;
 
 ### CHECK CREATED TABLE
 
-```
+```sql
 DESCRIBE student
 ```
 
@@ -49,7 +49,7 @@ This will show created data
 
 ### RENAME TABLE
 
-```
+```sql
 ALTER TABLE student
 RENAME TO new_table_name;
 ```
@@ -58,12 +58,12 @@ RENAME TO new_table_name;
 
 ### ADD EXTRA COLUMN IN CREATED DATA
 
-```
+```sql
 ALTER TABLE studen ADD gpa DECIMAL(3,2);
 ```
 
 ***Add multiple columns***
-```
+```sql
 ALTER TABLE table_name
     ADD new_column_name column_definition
     [FIRST | AFTER column_name],
@@ -74,7 +74,7 @@ Code language: SQL (Structured Query Language) (sql)
 ```
 
 More examples:
-```
+```sql
 ALTER TABLE vehicles
 ADD color VARCHAR(50),
 ADD note VARCHAR(255);
@@ -83,21 +83,21 @@ ADD note VARCHAR(255);
 
 ### MODIFY COLUMN
 
-```
+```sql
 ALTER TABLE table_name
 MODIFY column_name column_definition
 [ FIRST | AFTER column_name];    
 ```
 
 If we want to change column name a NOT NULL then we can do the following:
-```
+```sql
 ALTER TABLE student 
 MODIFY name VARCHAR(20) NOT NULL;
 ```
 
 
 ***Modify multiple columns***
-```
+```sql
 ALTER TABLE table_name
     MODIFY column_name column_definition
     [ FIRST | AFTER column_name],
@@ -107,7 +107,7 @@ ALTER TABLE table_name
 ```
 
 e.g. we have a table name `vehicles`. We want to modify column `year` and `color` then we can do the following:
-```
+```sql
 ALTER TABLE vehicles 
 MODIFY year SMALLINT NOT NULL,
 MODIFY color VARCHAR(20) NULL AFTER make;
@@ -121,7 +121,7 @@ Second, modify the color column by setting the maximum length to 20, removing th
 
 ### DELETE ENTIRE DATA
 
-```
+```sql
 DELETE TABLE student;
 ```
 
@@ -130,7 +130,7 @@ This will delete entire dataset
 
 ***Delete specific column***
 
-```
+```sql
 ALTER TABLE student DROP COLUMN gpa;
 ```
 This will drop `gpa` column from our table.
@@ -140,7 +140,7 @@ This will drop `gpa` column from our table.
 
 ### INSERT DATA 
 
-```
+```sql
 INSERT INTO student VALUES (1, 'JACK', 'Biology')
 ```
 
@@ -148,7 +148,7 @@ This command will insert 3 values in student table.
 
 ***If we don't know attribute***
 
-```
+```sql
 INSERT INTO student (student_id, name) VALUES (1, 'Jack')
 ```
 
@@ -157,7 +157,7 @@ This comand will insert two values. Since we didn't know remaining attributes, i
 ------------------------------------------------------
 Let's define new attribute
 
-```
+```sql
 ALTER TABLE studen ADD major VARCHAR(20) UNIQUE;
 ```
 
@@ -177,7 +177,7 @@ If we write `DEFAULT 'Undecided' instead of UNIQUE then this will insert `undeci
 
 ### AUTO INCREMENT
 
-```
+```sql
 CREATE TABLE student (
     student_id int NOT NULL AUTO_INCREMENT,
     LastName varchar(20) NOT NULL,
@@ -196,7 +196,7 @@ By default, the starting value for AUTO_INCREMENT is 1, and it will increment by
 
 To update date table 'student'
 
-```
+```sql
 SELECT * FROM student;
 UPDATE student
 SET 
@@ -216,7 +216,7 @@ lastname = 'Hill',
 WHERE
     employeeNumber = 1056;
 ```
-```
+```sql
 UPDATE employees
 SET email = REPLACE(email,'@classicmodelcars.com','@mysqltutorial.org')
 WHERE
@@ -226,7 +226,7 @@ WHERE
 
 
 ***Update with more condition***
-```
+```sql
 SELECT * FROM student;
 UPDATE student
 SET 
@@ -238,7 +238,7 @@ WHERE major = 'Bio' or major = 'Chem' ;
 
 ### DELETE ROW
 
-```
+```sql
 SELECT * FROM student
 DELETE FROM student
 WHERE student_id = 5;
@@ -254,13 +254,13 @@ WHERE name = 'TOM' AND major = 'Undecided';
 
 The ORDER BY keyword is used to sort the result-set in ascending or descending order.
 
-```
+```sql
 SELECT * FROM table_name
 ORDER BY  colume1, column2,.... ASC|DESC;
 ```
 
 e.g. 
-```
+```sql
 SELECT name FROM student
 
 -- or we can do following
@@ -272,7 +272,7 @@ ORDER BY student_id ASC|DESC;
 
 e.g. 2
 
-```
+```sql
 SELECT * FROM Customers
 ORDER BY Country DESC;
 ```
@@ -280,7 +280,7 @@ ORDER BY Country DESC;
 
 ### LIMIT
 
-```
+```sql
 SELECT 
     select_list
 FROM
@@ -289,7 +289,7 @@ LIMIT [offset,] row_count;
 ```
 
 e.g.1
-```
+```sql
 SELECT 
     customerNumber, 
     customerName, 
@@ -310,14 +310,14 @@ In this example:
 ### COUNT , AVERAGE , MAX , MIN , SUM
 
 ***COUNT***
-```
+```sql
 SELECT COUNT(column_name) 
 FROM table_name;
 
 ```
 
 e.g.1
-```
+```sql
 SELECT COUNT(emp_id)
 FROM employees;
 WHERE sex = 'F' AND birth-date > 1970-01-01;
@@ -326,7 +326,7 @@ WHERE sex = 'F' AND birth-date > 1970-01-01;
 e.g.2 
 We can also use `count` with `GROUP BY`
 
-```
+```sql
 SELECT product, COUNT(*)
 FROM products
 GROUP BY productline;
@@ -336,7 +336,7 @@ e.g.3
 
 To find how many males and females are there are
 
-```
+```sql
 SELECT COUNT(sex), sex
 FROM employee
 GROUP BY sex;
@@ -349,14 +349,14 @@ Let's find out average salary of male from employees table
 
 e.g.1
 
-```
+```sql
 SELECT AVG(salary)
 FROM employees;
 WHERE sex = 'M';
 ```
 e.g.2
 
-```
+```sql
 SELECT 
     AVG(buyprice) 'Average Classic Cars Price'
 FROM
@@ -366,7 +366,7 @@ WHERE
 ```
 
 ***MAX***
-```
+```sql
 SELECT 
     MAX(amount) largest_payment_2004
 FROM
@@ -381,7 +381,7 @@ Then, use the MAX() function in the SELECT clause to find the largest amount of 
 
 e.g. 1
 
-```
+```sql
 SELECT 
     *
 FROM
@@ -395,7 +395,7 @@ WHERE
 
 e.g.2 
 
-```
+```sql
 SELECT * FROM payments
 WHERE amount = (SELECT MAX(amount) 
                 FROM payments);
@@ -405,7 +405,7 @@ WHERE amount = (SELECT MAX(amount)
 
 e.g. 1
 
-```
+```sql
 SELECT 
     MIN(buyPrice)
 FROM
@@ -417,7 +417,7 @@ WHERE
 e.g. 2
 
 
-```
+```sql
 SELECT 
     productCode, 
     productName, 
@@ -436,7 +436,7 @@ WHERE
 ***SUM***
 
 The following shows the order line items of the order number 10110:
-```
+```sql
 SELECT 
     orderNumber, 
     quantityOrdered, 
@@ -448,7 +448,7 @@ WHERE
 ```
 To calculate the total for the order number 10110, you use the SUM() function as follows:
 
-```
+```sql
 SELECT 
 	SUM(quantityOrdered * priceEach)  orderTotal
 FROM
@@ -460,7 +460,7 @@ WHERE
 
 *** SUM with GROUP BY***
 
-```
+```sql
 SELECT 
     orderNumber, 
     SUM(quantityOrdered * priceEach) orderTotal
@@ -481,7 +481,7 @@ The following SQL goes through conditions and returns a value when the first con
 e.g. 1
 
 
-```
+```sql
 SELECT OrderID, Quantity,
 CASE
     WHEN Quantity > 30 THEN 'The quantity is greater than 30'
@@ -494,7 +494,7 @@ e.g. 2
 
 
 
-```
+```sql
 SELECT CustomerName, City, Country
 FROM Customers
 ORDER BY
@@ -503,17 +503,6 @@ ORDER BY
     ELSE City
 END);
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 
 =====================================================================

@@ -22,7 +22,7 @@ Wildcard characters are used with the `LIKE` operator. The LIKE operator is used
 
 e.g.1
 
-```
+```sql
 SELECT * FROM table 
 WHERE column LIKE '%pattern%';
 ```
@@ -33,7 +33,7 @@ WHERE column LIKE '%pattern%';
 
 e.g.1
 
-```
+```sql
 SELECT * FROM Customers
 WHERE City LIKE 'ber%';
 ```
@@ -43,7 +43,7 @@ The above query will return all the customers whose city starts with the letter 
 
 e.g.2
 
-```
+```sql
 SELECT * FROM Customers
 WHERE City LIKE '%es%';
 ```
@@ -57,7 +57,7 @@ e.g.1
 
 The following SQL statement selects all customers with a City starting with any character, followed by "ondon":
 
-```
+```sql
 SELECT * FROM Customers
 WHERE City LIKE '_ondon';
 ```
@@ -67,7 +67,7 @@ e.g.2
 
 The following SQL statement selects all customers with a City starting with "L", followed by any character, followed by "n", followed by any character, followed by "on":
 
-```
+```sql
 SELECT * FROM Customers
 WHERE City LIKE 'L_n_on';
 ```

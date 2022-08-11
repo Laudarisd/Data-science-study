@@ -1,6 +1,6 @@
 # FUNCTION #
 
-```
+```sql
 CREATE TABLE student_record (
     Name VARCHAR(100), 
     Math INT, 
