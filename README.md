@@ -73,8 +73,3 @@ e.g EDA
 
 ## Make Decision
 
-### How to make predictions
-
-
-
-**References**
