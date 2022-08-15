@@ -1,8 +1,12 @@
 # Data Science
 
 
-<img src=https://github.com/Laudarisd/Data-science-study/blob/master/src/sql/img/3.png
-[source](https://www.educba.com/data-science-lifecycle/) />
+<img src=https://github.com/Laudarisd/Data-science-study/blob/master/src/sql/img/3.png alt="">
+
+
+[source](https://www.educba.com/data-science-lifecycle/)
+
+
 
 ====================================================================================
 
