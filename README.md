@@ -17,7 +17,7 @@
 
 
 ## Statistics & Mathematics
-https://peterroelants.github.io/posts/gaussian-process-tutorial/
+[ref](https://peterroelants.github.io/posts/gaussian-process-tutorial/)
 
 ***[mean](https://github.com/Laudarisd/Data-science-study/tree/master/src/ml/stat&maths/mean)*** 
 
