@@ -11,9 +11,9 @@
 ====================================================================================
 
 ## Server Handling
-***SQL***
+***[SQL](https://github.com/Laudarisd/Data-science-study/tree/master/src/sql)***
 
-***NoSQL***
+***[NoSQL](https://github.com/Laudarisd/Data-science-study/tree/master/src/nosql)***
 
 ====================================================================================
 
@@ -32,7 +32,7 @@ https://peterroelants.github.io/posts/gaussian-process-tutorial/
 
 ====================================================================================
 
-## Mathematics**
+## Mathematics
 ***Linear Algebra***
 
 ***matrices and multiplication, eigen vectors***
@@ -41,7 +41,7 @@ https://peterroelants.github.io/posts/gaussian-process-tutorial/
 
 ====================================================================================
 
-## Data visualization $ Interpolation
+## Data visualization & Interpolation
 ***Libraries***
 
 ***Tools***
