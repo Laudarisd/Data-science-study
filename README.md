@@ -8,14 +8,13 @@
 
 
 
-====================================================================================
 
 ## Server Handling
 ***[SQL](https://github.com/Laudarisd/Data-science-study/tree/master/src/sql)***
 
 ***[NoSQL](https://github.com/Laudarisd/Data-science-study/tree/master/src/nosql)***
 
-====================================================================================
+
 
 ## Statistics & Mathematics
 https://peterroelants.github.io/posts/gaussian-process-tutorial/
@@ -30,7 +29,6 @@ https://peterroelants.github.io/posts/gaussian-process-tutorial/
 
 ***co-variance***
 
-====================================================================================
 
 ## Mathematics
 ***Linear Algebra***
@@ -39,7 +37,7 @@ https://peterroelants.github.io/posts/gaussian-process-tutorial/
 
 ***Calculus***
 
-====================================================================================
+
 
 ## Data visualization & Interpolation
 ***Libraries***
@@ -51,7 +49,7 @@ e.g Tableau, Matlab, R, Python, etc.
 ***Visualization Methods***
 e.g EDA
 
-====================================================================================
+
 
 ## Data Preprocessing
 ***Features selection***
@@ -74,7 +72,7 @@ e.g EDA
 
 ***Data Merge***
 
-====================================================================================
+
 
 ## Machine Learning
 ***Supervisor and Unsupervisor Learning***
@@ -91,14 +89,14 @@ e.g EDA
 
 ***Evaluate Model***
 
-====================================================================================
+
 
 ## Model Development
 ***Deploy model in API***
 
 ***Send result to  server or dash board*** 
 
-====================================================================================
+
 
 ## Make Decision
 
