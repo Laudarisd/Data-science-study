@@ -17,7 +17,7 @@
 
 
 ## Statistics & Mathematics
-[ref](https://peterroelants.github.io/posts/gaussian-process-tutorial/)
+
 
 ***[mean](https://github.com/Laudarisd/Data-science-study/tree/master/src/ml/stat&maths/mean)*** 
 
@@ -29,6 +29,8 @@
 
 ***[co-variance](https://github.com/Laudarisd/Data-science-study/tree/master/src/ml/stat&maths/co-variance)***
 
+
+[ref](https://peterroelants.github.io/posts/gaussian-process-tutorial/)
 
 ## Mathematics
 ***Linear Algebra***
