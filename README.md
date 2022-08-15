@@ -19,7 +19,7 @@
 ## Statistics & Mathematics
 https://peterroelants.github.io/posts/gaussian-process-tutorial/
 
-***[Mean](https://github.com/Laudarisd/Data-science-study/tree/master/src/ml/stat&maths/mean)*** 
+***[mean](https://github.com/Laudarisd/Data-science-study/tree/master/src/ml/stat&maths/mean)*** 
 
 ***[median](https://github.com/Laudarisd/Data-science-study/tree/master/src/ml/stat&maths/median)***
 
