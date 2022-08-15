@@ -1,61 +1,75 @@
 # Data Science
 
-Complete  Roadmap To understand Data Science
 
 **Diagram**
 
 
-==========================================================
+===========================================================================================
+
 ## Server Handling
+***SQL***
+***NoSQL***
 
-
+===========================================================================================
 
 ## Statistics & Mathematics
 https://peterroelants.github.io/posts/gaussian-process-tutorial/
 
-**Few stat concepts**
-- Mean, median, sd, variance, co-variance
-- EDA concept
+***Mean*** 
+***median***
+***sd***
+***variance***
+***co-variance***
 
-**Mathematics**
--Linear Algebra
+===========================================================================================
 
-- matrices and multiplication, eigen vectors
-- Calculus
+## Mathematics**
+***Linear Algebra***
+***matrices and multiplication, eigen vectors***
+***Calculus***
+
+===========================================================================================
 
 ## Data visualization $ Interpolation
+***Libraries***
+***Tools***
+e.g Tableau, Matlab, R, Python, etc.
+***Plotting***
+***Visualization Methods***
+e.g EDA
 
-- Visualize with code
-    - Libraries
-- Tabelu
-- Excel
-
+===========================================================================================
 
 ## Data Preprocessing
+***Features selection***
+***Data Cleaning***
+***Data Transformation***
+***Data Standardization***
+***Data Normalization***
+***Data Aggregation***
+***Data Sampling***
+***Data Extraction***
+***Data Split***
+***Data Merge***
 
-**EDA**
-**FFT**
+===========================================================================================
 
-**Data Cleaning**
-- Fill empty entry
-- Delete unnecessary entries
-- Separate dependent and independent variables
-- One hot encoding
-- Make train and test datset 
+## Machine Learning
+***Supervisor and Unsupervisor Learning***
+***Classification and Regeression Models***
+***[Algorithms](https://github.com/Laudarisd/Data-science-study/tree/master/src/ml)***
+***Train Model***
+***Model Tuning and Comparision***
+***Predict Model***
+***Evaluate Model***
+
+===========================================================================================
 
 ## Model Development
+***Deploy model in API***
+***Send result to  server or dash board*** 
 
-### Supervisor and Unsupervisor
-### Classification and Regeression
-### [Algorithms](https://github.com/Laudarisd/Data-science-study/tree/master/src/ml)
-### Train Model
-
-
-## Model Deployment
-
-### Test model with test dataset and new dataset for presiction
-### Deploy model in API
-### Send result to  server or dash board  
+===========================================================================================
 
 ## Make Decision
 
