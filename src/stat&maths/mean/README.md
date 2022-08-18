@@ -36,15 +36,35 @@ The mean is important because it gives us a general idea of the central tendency
 
 ## Disadvantages of Arthematic Mean
 
-The mean can be misleading if the data is skewed or contains outliers. These are values that are unusual compared to the rest of the data set by being especially small or large in numerical value.
+<p>The mean can be misleading if the data is skewed or contains outliers. These are values that are unusual compared to the rest of the data set by being especially small or large in numerical value.</p>
+
+<p>
 For example:
 
 |staff | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
-|:------|:----|:----|:----|:----|:----|:----|:----|:----|:----|
+|------|----|----|----|----|----|----|----|----|----|
 |salary|10k|15k|16k|15kk|17kk|12kk|18kk|14kk|95k|90k|
 
 The mean of the above dataset is 30.2 k. However, inspecting the raw data suggests that this mean value might not be the best way to accurately reflect the typical salary of a worker, as most workers have salaries in the $10k to 18k range. The mean is being skewed by two large salaries, $95k and $90M.
 
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
 
 ### reference
 [ref1](https://statistics.laerd.com/statistical-guides/measures-central-tendency-mean-mode-median.php#:~:text=An%20important%20property%20of%20the,the%20mean%20is%20always%20zero.)
