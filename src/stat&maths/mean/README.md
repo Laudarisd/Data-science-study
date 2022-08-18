@@ -16,7 +16,7 @@ It is calculated as follows:
 ```python
     mean = sum of all numbers / number of numbers
 ```
-<img src=https://github.com/Laudarisd/Data-science-study/tree/master/src/stat%26maths/mean/img/1.png alt="">
+<img src=https://github.com/Laudarisd/Data-science-study/blob/master/src/stat%26maths/mean/img/1.png alt="">
 
 [reference](https://corporatefinanceinstitute.com/resources/knowledge/other/mean/)
 
