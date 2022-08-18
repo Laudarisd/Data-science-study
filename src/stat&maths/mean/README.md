@@ -15,8 +15,10 @@ It is calculated as follows:
 
 ```python
     mean = sum of all numbers / number of numbers
-
 ```
+<img src=https://github.com/Laudarisd/Data-science-study/tree/master/src/stat%26maths/mean/img/1.png alt="">
 
-In finance, the arithmetic mean may be misleading in the calculations of returns, as it does not consider the effects of volatility and compounding, producing an inflated value for the central point of the distribution.
-[ref](https://corporatefinanceinstitute.com/resources/knowledge/other/mean/)
+[reference](https://corporatefinanceinstitute.com/resources/knowledge/other/mean/)
+
+
+## Why use Arthematic Mean?

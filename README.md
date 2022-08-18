@@ -19,7 +19,7 @@
 ## Statistics & Mathematics
 
 
-***[mean](https://github.com/Laudarisd/Data-science-study/tree/master/src/ml/stat&maths/mean)*** 
+***[mean](https://github.com/Laudarisd/Data-science-study/tree/master/src/stat%26maths/mean)*** 
 
 ***[median](https://github.com/Laudarisd/Data-science-study/tree/master/src/ml/stat&maths/median)***
 
