@@ -21,7 +21,7 @@
 
 ***[mean](https://github.com/Laudarisd/Data-science-study/tree/master/src/stat%26maths/mean)*** 
 
-***[median](https://github.com/Laudarisd/Data-science-study/tree/master/src/ml/stat&maths/median)***
+***[median](https://github.com/Laudarisd/Data-science-study/tree/master/src/stat%26maths/median)***
 
 ***[sd](https://github.com/Laudarisd/Data-science-study/tree/master/src/ml/stat&maths/sd)***
 
