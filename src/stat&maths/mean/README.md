@@ -42,10 +42,7 @@ The mean is important because it gives us a general idea of the central tendency
 
 <table>
   <tr>
-    <th>staff</th>
-    <th>salary</th>
-  </tr>
-  <tr>
+  <td>staff</td>
     <td>1</td>
     <td>2</td>
     <td>3</td>
@@ -58,6 +55,7 @@ The mean is important because it gives us a general idea of the central tendency
     <td>10</td>
   </tr>
   <tr>
+    <td>salary</td>
     <td>10k</td>
     <td>15k</td>
     <td>16k</td>
