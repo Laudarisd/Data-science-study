@@ -40,7 +40,7 @@ The mean can be misleading if the data is skewed or contains outliers. These are
 For example:
 
 |staff | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
-|------|----|----|----|----|----|----|----|----|----|
+|:------|:----|:----|:----|:----|:----|:----|:----|:----|:----|
 |salary|10k|15k|16k|15kk|17kk|12kk|18kk|14kk|95k|90k|
 
 The mean of the above dataset is 30.2 k. However, inspecting the raw data suggests that this mean value might not be the best way to accurately reflect the typical salary of a worker, as most workers have salaries in the $10k to 18k range. The mean is being skewed by two large salaries, $95k and $90M.
