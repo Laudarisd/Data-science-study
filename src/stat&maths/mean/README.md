@@ -19,4 +19,4 @@ It is calculated as follows:
 ```
 
 In finance, the arithmetic mean may be misleading in the calculations of returns, as it does not consider the effects of volatility and compounding, producing an inflated value for the central point of the distribution.
-(ref)[https://corporatefinanceinstitute.com/resources/knowledge/other/mean/]
+[ref](https://corporatefinanceinstitute.com/resources/knowledge/other/mean/)
