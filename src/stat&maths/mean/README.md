@@ -38,33 +38,41 @@ The mean is important because it gives us a general idea of the central tendency
 
 <p>The mean can be misleading if the data is skewed or contains outliers. These are values that are unusual compared to the rest of the data set by being especially small or large in numerical value.</p>
 
-<p>
-For example:
-
-|staff | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
-|------|----|----|----|----|----|----|----|----|----|
-|salary|10k|15k|16k|15kk|17kk|12kk|18kk|14kk|95k|90k|
-
-The mean of the above dataset is 30.2 k. However, inspecting the raw data suggests that this mean value might not be the best way to accurately reflect the typical salary of a worker, as most workers have salaries in the $10k to 18k range. The mean is being skewed by two large salaries, $95k and $90M.
-
+<p> For example:
 
 <table>
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th>staff</th>
+    <th>salary</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
   </tr>
   <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
+    <td>10k</td>
+    <td>15k</td>
+    <td>16k</td>
+    <td>15k</td>
+    <td>17k</td>
+    <td>12k</td>
+    <td>18k</td>
+    <td>14k</td>
+    <td>95k</td>
+    <td>90k</td>
   </tr>
 </table>
+
+
+The mean of the above dataset is 30.2 k. However, inspecting the raw data suggests that this mean value might not be the best way to accurately reflect the typical salary of a worker, as most workers have salaries in the $10k to 18k range. The mean is being skewed by two large salaries, $95k and $90M. </p>
 
 ### reference
 [ref1](https://statistics.laerd.com/statistical-guides/measures-central-tendency-mean-mode-median.php#:~:text=An%20important%20property%20of%20the,the%20mean%20is%20always%20zero.)
