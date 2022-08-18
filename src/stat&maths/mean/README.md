@@ -74,4 +74,5 @@ The mean of the above dataset is 30.2 k. However, inspecting the raw data sugges
 
 ### reference
 [ref1](https://statistics.laerd.com/statistical-guides/measures-central-tendency-mean-mode-median.php#:~:text=An%20important%20property%20of%20the,the%20mean%20is%20always%20zero.)
+
 [ref2](https://corporatefinanceinstitute.com/resources/knowledge/other/mean/)
