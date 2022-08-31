@@ -17,7 +17,7 @@ It is calculated as follows:
     mean = sum of all numbers / number of numbers
 ```
 
-In Statistics, we can find out population mean and sample mean. Population mean is the mean of the entire population. Sample mean is the mean of a sample of data. Mean of both means is the mean of the entire population. but writing way is different. Populatyion mean can be written as:
+In Statistics, we can find out population mean and sample mean. Population mean is the mean of the entire population. Sample mean is the mean of a sample of data. Both means is the mean of the entire population. but writing way is different. Populatyion mean can be written as:
 
 ```python
     mean = sum of all numbers / number of numbers
