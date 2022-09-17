@@ -4,8 +4,6 @@ from sklearn.metrics import accuracy_score, f1_score, confusion_matrix, classifi
 from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import learning_curve
 import matplotlib.pyplot as plt
-
-
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -18,8 +16,8 @@ class ModelMLP():
         self.X_test = X_test
         self.y_test = y_test
     def model(self):
-        mlp = MLPClassifier(hidden_layer_sizes=(100, 100, 100), max_iter=1000, alpha=0.0001,
-                     solver='adam', verbose=10,  random_state=21,tol=0.000000001)
+        mlp = MLPClassifier(hidden_layer_sizes=(10, ), max_iter=100, alpha=0.001,
+                     solver='adam', verbose=10,  random_state=21,tol=0.0001)
         mlp.fit(self.X_train, self.y_train)
         self.y_pred = mlp.predict(self.X_test)
         print("Multi-layer Perceptron")

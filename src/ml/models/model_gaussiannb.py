@@ -24,4 +24,5 @@ class ModelGaussianNB():
     def actaul_vs_prediction_dataframe(self):
         self.df = pd.DataFrame({'Actual': self.y_test, 'Predicted': self.y_pred})
         print(self.df)
+    
    
