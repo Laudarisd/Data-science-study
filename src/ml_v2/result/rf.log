@@ -304,3 +304,75 @@ weighted avg       0.98      0.98      0.98       140
 
 [140 rows x 2 columns]
 ################ Feature Importance ################
+Random Forest
+################ Best Parameters ################
+bootstrap: True
+ccp_alpha: 0.0
+class_weight: None
+criterion: gini
+max_depth: None
+max_features: sqrt
+max_leaf_nodes: None
+max_samples: None
+min_impurity_decrease: 0.0
+min_samples_leaf: 1
+min_samples_split: 2
+min_weight_fraction_leaf: 0.0
+n_estimators: 100
+n_jobs: None
+oob_score: False
+random_state: None
+verbose: 0
+warm_start: False
+warm_start: False
+verbose: 0
+random_state: 1
+oob_score: False
+n_estimators: 100
+min_samples_split: 10
+min_samples_leaf: 2
+max_features: auto
+max_depth: 5
+criterion: gini
+class_weight: None
+ccp_alpha: 0.0
+bootstrap: True
+################ Accuracy ################
+Accuracy: 0.9785714285714285
+################ Accuracy from each fold ################
+Accuracy: 0.9732142857142857
+Accuracy: 0.9464285714285714
+Accuracy: 0.9821428571428571
+Accuracy: 0.9732142857142857
+Accuracy: 0.9369369369369369
+################ F1 score ################
+F1 score: 0.9786324786324786
+################ Confusion matrix ################
+Confusion matrix: [[93  2]
+ [ 1 44]]
+################ Classification report ################
+Classification report:               precision    recall  f1-score   support
+
+           0       0.99      0.98      0.98        95
+           1       0.96      0.98      0.97        45
+
+    accuracy                           0.98       140
+   macro avg       0.97      0.98      0.98       140
+weighted avg       0.98      0.98      0.98       140
+
+################ Actual vs Predicted ################
+     Actual  Predicted
+0         0          0
+1         0          0
+2         0          0
+3         1          1
+4         0          0
+..      ...        ...
+135       0          0
+136       1          1
+137       0          0
+138       0          0
+139       0          0
+
+[140 rows x 2 columns]
+################ Feature Importance ################

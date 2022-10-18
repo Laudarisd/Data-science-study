@@ -190,3 +190,51 @@ weighted avg       0.96      0.96      0.96       140
 139       0          0
 
 [140 rows x 2 columns]
+ Knn Classifier
+################ Best Parameters ################
+algorithm: auto
+leaf_size: 10
+metric: minkowski
+metric_params: None
+n_jobs: -1
+n_neighbors: 15
+p: 2
+weights: distance
+################ Accuracy ################
+Accuracy: 0.9642857142857143
+################ Accuracy from each fold ################
+Accuracy: 0.9553571428571429
+Accuracy: 0.9553571428571429
+Accuracy: 0.9821428571428571
+Accuracy: 0.9732142857142857
+Accuracy: 0.9369369369369369
+################ F1 score ################
+F1 score: 0.9643874643874644
+################ Confusion matrix ################
+Confusion matrix: [[92  3]
+ [ 2 43]]
+################ Classification report ################
+Classification report:               precision    recall  f1-score   support
+
+           0       0.98      0.97      0.97        95
+           1       0.93      0.96      0.95        45
+
+    accuracy                           0.96       140
+   macro avg       0.96      0.96      0.96       140
+weighted avg       0.96      0.96      0.96       140
+
+################ Actual vs Predicted ################
+     Actual  Predicted
+0         0          0
+1         0          0
+2         0          0
+3         1          1
+4         0          0
+..      ...        ...
+135       0          0
+136       1          1
+137       0          0
+138       0          0
+139       0          0
+
+[140 rows x 2 columns]

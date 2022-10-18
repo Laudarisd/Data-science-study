@@ -102,14 +102,14 @@ class DataPipeline:
             #('imputer', SimpleImputer(missing_values= 'nan', strategy= 'median')),
             ('one-hot', OneHotEncoder(handle_unknown='ignore', sparse=False))
         ])
-        #try:
-        self.full_processor  = ColumnTransformer(transformers=[
-                            ('number', self.numeric_pipeline, self.numerical_features),
-                            ('category', self.categorical_pipeline, self.categorical_features)
-                        ])
-        print(self.full_processor.fit_transform(self.X_train))
-        # except:
-        #     print("Error occured: Check Pipeline")
+        try:
+            self.full_processor  = ColumnTransformer(transformers=[
+                                ('number', self.numeric_pipeline, self.numerical_features),
+                                ('category', self.categorical_pipeline, self.categorical_features)
+                            ])
+            print(self.full_processor.fit_transform(self.X_train))
+        except ValueError:
+            print("Error occured: Check Pipeline")
     def lasso_estimator(self):
         self.lasso = Lasso(alpha=0.1)
 
@@ -140,8 +140,8 @@ class DataPipeline:
             print(self.rf_model_fit[-1].feature_importances_)
 
             self.features_importance = pd.DataFrame({'features': self.rf_pipeline[:-1].get_feature_names_out(), 'importance': self.rf_model_fit[-1].feature_importances_})
+            self.features_importance = self.features_importance.sort_values(by='importance', ascending=False)
             print(self.features_importance)
-
             print("Accuracy:", accuracy_score(self.y_test, self.y_pred))
             print("F1 score:", round(f1_score(self.y_test, self.y_pred), 3))
         except ValueError:
